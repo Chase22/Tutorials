@@ -1,0 +1,28 @@
+Aufgabe 1) Hello World
+Einfache Konsolen Ein- und Ausgaben
+
+Aufgabe:
+Frage den Nutzer nach seinem Namen und gebe nach der Eingabe folgende Zeile aus:
+Hallo, [Name].
+
+Erweiterung:
+Frage den Nutzer nacheinander nach Name, Alter und Wohnort und gebe folgende Zeile aus:
+Hallo, [Name] aus [Wohnort]. Du bist [Alter] Jahre alt
+
+Eine Überprüfung der Eingaben ist nicht nötig.
+
+Notizen:
+Zum Ausgeben von Dingen auf der Console bietet sich der befehl System.out.println() an.
+Dabei ist System das Systempaket, out der Standardoutputstream der Konsole und println eine Methode des Streams mit dem Konsolenausgaben ermöglicht werden.
+
+Die Eingabe ist etwas komplizierter.
+Der System.in Inputstream bietet keine praktische readLine() Methode. Auch ist die read() Methode sehr umständlich zu benutzen.
+Daher bietet sich ein BufferedInputReader an. Dieser hat eine praktische readLine() Methode. Jedoch können wir ihm nicht direkt den Inputstream übergeben. Er verlangt einen Reader.
+
+Dafür bietet sich der InputStreamReader an. Daher sieht die komplete initialisation des BufferedReaders wie folgt aus:
+BufferedReader inputReader = new BufferedReader(new InputStreamReader(System.in));
+
+Nun können wir inputReader.readLine() aufrufen um eine Zeile aus der Konsole auszulesen
+
+Weitere Infos:
+http://www.javaschubla.de/2007/javaerst0100.html

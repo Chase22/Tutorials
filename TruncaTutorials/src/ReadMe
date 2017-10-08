@@ -1,0 +1,11 @@
+Jede Aufgabe wird in einem eigenen Paket aufgelistet werden, benannt nach dem Schema org.tutorial.taskXX, laufend durchnummeriert.
+Ich empfehle die Aufgaben in der entsprechenden Reihenfolge durchzugehen.
+
+In jedem Paket findet sich eine Datei "Aufgabe", diese beinhaltet eine kurze Beschreibung, eventuell ein paar wichtige Notizen oder verweise auf Internetseiten oder das "Java ist eine Insel" Buch. Dazu kommen die Aufgaben. Dabei gibt es immer eine einfache und eine erweiterte Version. Die erweiterte Fassung stellt dabei zusätzliche Ansprüche, Schwierigkeiten und kann als weitere Übung durchgeführt werden.
+
+Zusätzlich gibt es im Paket eventuelle vorgegebene Klassendateien, welche für die Aufgabe wichtig ist.
+Das Lösen der Aufgabe ist immer dasselbe Schema. Im Paket muss sich eine beliebig benannte Klasse befinden, welche mit einer Main-Methode ausgestattet ist und beim Start die in der Aufgabe beschriebene Funktion ausführt.
+
+Danach kann die Aufgabe in das Github gepuscht werden. Wenn das abgeschlossen ist,schaue ich mir die fertige Lösung an, mache eventuell Kommentare in den Code und pusche meine Musterlösung in das Paket org.tutorial.taskXX.solution.
+
+Wichtig! Die Musterlösung ist immer ein möglicher Weg die Aufgabe zu lösen. Es muss nicht der einzig richtige und auch nicht der effizienteste Weg sein. Nur weil die Müsterlösung nicht der eigenen entspricht ist die eigene nicht falsch! 
