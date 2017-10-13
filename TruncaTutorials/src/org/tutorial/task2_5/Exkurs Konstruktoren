@@ -1,0 +1,39 @@
+Exkurs Konstruktoren
+
+Bitte lies erst den Exkurs Modifikatoren
+
+Es gibt neben Settern noch eine weitere Möglichkeit Objektvariablen zu setzen. Bei der Erzeugung des Objekts.
+
+In der letzten Aufgabe wurde ein Objekt mit der Zeile
+Klasse objekt = new Klasse();
+
+erzeugt. Das ist der sogennante Standardkonstruktor. Jede Klasse muss nach Java-Beans so einen besitzen. (Es ist jedoch nicht immer sinvoll das auch zu tun)
+
+Konstruktoren sind spezielle Methoden, die beim Erzeugen eines neuen Objektes aufgerufen werden. Duch Methodenüberladung kann es mehrere Konstruktoren geben.
+
+Beispiel:
+
+class Klasse {
+	private String name;
+	private String straße;
+	
+	Klasse() {}; //Standardkonstruktor
+	
+	Klasse(String name) {
+		this.name = name;
+	}
+	
+	Klasse(String name, String straße) {
+		this.name = name;
+		this.straße = straße;
+	}
+}
+
+Klasse klasse1 = new Klasse("Max");
+
+Klasse klasse2 = new Klasse("Max", "Eine Straße");
+
+system.out.println(klasse1.name); //Max
+system.out.println(klasse1.straße); //null
+system.out.println(klasse2.name); //Max
+system.out.println(klasse2.straße); //Eine Straße

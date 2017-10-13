@@ -1,0 +1,39 @@
+Exkurs Modifikatoren
+
+
+In der letzten Aufgabe wurde in der Klasse alles als Public deklariert. Auch Variablen. Das ist jedoch nicht der Standard.
+
+In Java gibt es 4 sogennante Sichtbarkeiten(Englisch Scopes)
+Public: Eine Methode oder Variable ist für alle Klassen sichtbar
+Protected: Eine Methode oder Variable ist nur für Unterklassen oder Klassen des gleichen Paketes sichtbar
+Private: Eine Methode ist nur für die eigene Klasse oder eingebettete Klassen sichtbar
+
+Ein Sonderfall ist die Packetsichtbarkeit. Jede Methode oder Variable ohne Sichtbarkeitsmodifikator (public, protected, private) nimmt diesen Zustand an. Sie sind dann NUR für die Klassen des gleichen Pakets sichtbar. Nicht jedoch für Unterklassen in anderen Paketen
+
+Siehe: http://openbook.rheinwerk-verlag.de/javainsel/javainsel_05_002.html#dodtp2f2a18cf-abe8-48d5-843d-dc7a54b6645b
+
+Ein weiterer wichtiger Modifikator ist Static.
+Methoden oder Variablen die als static makiert sind, werden Klassenmethoden oder Klassenvariablen bezeichnet.
+
+Statische Methoden lassen sich ohne ein Objekt, direkt über die Klasse aufrufen. Auch haben statische Methoden keinen Zugriff auf Objektvariablen
+
+Statische Variablen behalten ihren Wert über alle Objekte der Klasse.
+
+
+Programmstil, Java-Beans.
+Die Java Beans Konvention legt fest wie Klassen in Java aussehen sollten. Besonders für Komplexere Mechanismen wie serialisierung, deserialisierung, Remote-Procedure-Call usw. Müssen Klassen häufig dieser Konvention entsprechen.
+
+Eine Regelung der Konvention ist, dass alle Variablen einer Klasse private sein müssen. Sie sind dann über sogenannte Getter und Setter erreichbar.
+
+Beispiel:
+private int number;
+
+public int getNumber() {
+	return number;
+}
+
+public void setZahl(int number) {
+	this.number = number;
+}
+
+Dadurch sind zum Beispiel zentrale Validierungen in der Set Methode oder read-only Variablen (durch das fehlen einer Set Methode) möglich.

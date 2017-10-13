@@ -1,0 +1,9 @@
+Aufgabe 2.5) Exkurs Modifizierer
+
+Lese bitte vor dieser Aufgabe die beiden Exkurs Dateien
+
+Aufgabe)
+Schreibe deine Klasse aus Aufgabe 2 um.
+
+Beide Variablen sollen privat sein und mit Get und Set Methoden ausgestattet sein
+Es soll einen Konstruktor geben um beide Variablen bei erzeugung mit Werten befüllen zu können
