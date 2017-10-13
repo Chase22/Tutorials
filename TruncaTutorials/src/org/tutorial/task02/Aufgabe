@@ -1,0 +1,28 @@
+Aufgabe 2) Ein Addierer
+Einleitung zu Klassen und Objekte
+
+Klassen sind die Baupläne für Objekte. Sie bestehen aus Variablen und Methoden welche dem Objekt zugewiesen werden.
+
+Neue Objekte können über den new Operator erstellt werden.
+
+Klassenname Objekt = new Klassenname();
+
+Der Zugriff auf Teile einer Klasse (Variablen oder Methoden) werden über den Punkt operator durchgeführt:
+Objekt.Methode()
+Objekt.Variable
+
+Aufgabe:
+Erstelle eine Klasse Addierer mit zwei Integer Variablen (Name frei Wählbar) und eine Methode getReult.
+Die Methode getResult soll die beiden Variablen addieren und das Ergebnis zurückgeben
+
+Der Einfachheit halber können die Variablen als public deklariert werden.
+
+Erzeuge 4 Objekte mit verschiedenen Werten und gebe die Ergebnisse auf der Konsole aus
+
+Erweiterung:
+Jedes Javaobjekt besitzt eine toString Methode, ohne Parameter und String als Rückgabe.
+Überschreibe diese Methode in der Klasse und lass sie folgenden Text zurückgeben:
+
+%WertA + %WertB = %Result
+
+Nutze diese Methode für die Konsolenausgabe der Aufgabe
